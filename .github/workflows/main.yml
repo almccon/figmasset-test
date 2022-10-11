@@ -1,0 +1,14 @@
+name: Generate sprites
+on: workflow_dispatch
+jobs:
+  generate-sprites:
+    name: Generate sprites
+    runs-on: ubuntu-latest
+    steps:
+      - id: generate-sprites
+        uses: stamen/figmasset-spritesheet-action@main
+        with:
+          figma-file: ${{ secrets.FIGMA_FILE }}
+          figma-token: ${{ secrets.FIGMA_TOKEN }}
+          figma-frame: example-frame
+          dest-dir: generated-sprites
