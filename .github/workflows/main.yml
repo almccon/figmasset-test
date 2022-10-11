@@ -10,5 +10,5 @@ jobs:
         with:
           figma-file: ${{ secrets.FIGMA_FILE }}
           figma-token: ${{ secrets.FIGMA_TOKEN }}
-          figma-frame: example-frame
+          figma-frame: sample-icons
           dest-dir: generated-sprites
